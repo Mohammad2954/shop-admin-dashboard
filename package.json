@@ -12,7 +12,8 @@
   "dependencies": {
     "git": "^0.1.5",
     "react": "^19.2.8",
-    "react-dom": "^19.2.8"
+    "react-dom": "^19.2.8",
+    "react-router": "^8.4.0"
   },
   "devDependencies": {
     "@types/react": "^19.2.17",
