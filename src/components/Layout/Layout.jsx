@@ -1,12 +1,18 @@
 import React from "react";
-import { Outlet } from "react-router";
+import { Outlet, ScrollRestoration } from "react-router";
+import Sidebar from "../../feachers/Sidebar/Sidebar";
+import Topbar from "../../feachers/Topbar/Topbar";
 
 function Layout() {
   return (
-    <>
-      <div>Layout</div>
-      <Outlet />
-    </>
+    <main className="flex">
+      <Sidebar />
+      <section>
+        <Topbar />
+        <Outlet />
+      </section>
+      <ScrollRestoration />
+    </main>
   );
 }
 
