@@ -8,7 +8,7 @@ function MenuSidebar() {
   return (
     <div>
       <ul>
-        <p className="my-2 text-sm font-bold">{title} </p>
+        <p className="my-2 text-sm font-bold">{title} : </p>
         {items.map((e) => (
           <ItemMenue key={e.id} {...e} />
         ))}
