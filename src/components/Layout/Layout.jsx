@@ -7,7 +7,7 @@ function Layout() {
   return (
     <main className="flex">
       <Sidebar />
-      <section>
+      <section className="w-full">
         <Topbar />
         <Outlet />
       </section>
