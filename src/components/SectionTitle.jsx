@@ -2,7 +2,7 @@ import React from "react";
 
 function SectionTitle({ title, Buttons, CalBtn }) {
   return (
-    <div className="mt-10 flex items-center justify-between">
+    <div className="pt-10 flex items-center justify-between">
       <span className="text-2xl font-bold">{title}</span>
       <div
         onClick={CalBtn}
