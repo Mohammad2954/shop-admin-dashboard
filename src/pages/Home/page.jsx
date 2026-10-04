@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import SectionTitle from "../../components/SectionTitle";
 import { useNavigate } from "react-router";
+import Summery from "../../components/Summery/Summery";
 
 function Home() {
   const isRedirect = useNavigate();
@@ -10,6 +11,7 @@ function Home() {
   return (
     <div className="px-8">
       <SectionTitle CalBtn={CalBtn} title={"داشبورد"} Buttons={"ایجاد محصول"} />
+      <Summery />
     </div>
   );
 }
