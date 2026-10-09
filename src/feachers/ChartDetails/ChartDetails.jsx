@@ -41,7 +41,21 @@ function ChartDetails({ data }) {
           tick={{ fill: "#333", fontSize: 13 }}
           width={40}
         />
-        <Tooltip />
+        <Tooltip
+          content={({ active, payload, label }) => {
+            if (!active || !payload?.length) return null;
+
+            return (
+              <div className="rounded-xl border border-gray-200 bg-white p-4 shadow-lg">
+                <p className="mb-2 text-sm font-bold text-gray-800">{label}</p>
+
+                <p className="text-sm text-violet-700">
+                  مقدار: <span className="font-bold">{payload[0].value}</span>
+                </p>
+              </div>
+            );
+          }}
+        />
 
         <Bar
           dataKey="value"
