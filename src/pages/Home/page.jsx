@@ -20,8 +20,11 @@ function Home() {
     <div className="px-8">
       <SectionTitle CalBtn={CalBtn} title={"داشبورد"} Buttons={"ایجاد محصول"} />
       <Summery />
-      <div>
-        <ChartDetails data={data} />
+      <div className="bg-white mt-15 shadow-2xl p-6 border border-gray-200 rounded-lg">
+        <h5 className="font-extrabold text-xl">امار کلی داشبورد</h5>
+        <div className="px-16">
+          <ChartDetails data={data} />
+        </div>
       </div>
     </div>
   );
